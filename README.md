@@ -1,4 +1,4 @@
-# Team 14
+# Team 14 - Recipe Website Project
 
 ### Milestone 1
 1. Allow users to register accounts
