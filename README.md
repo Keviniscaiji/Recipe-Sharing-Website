@@ -8,6 +8,7 @@ Milestone 1
 5. Users can search recipes published by others according to keywords
 6. Users can click the menu link and view the details of the menu
 7. Set the CSS design for the interface
+8. Finish remember me function
 
 Milestone 2
 1. Allow users to upload pictures for each step, set the materials of dishes and more humanized settings.
