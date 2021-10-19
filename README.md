@@ -1,6 +1,6 @@
 # Team 14 - Recipe Website Project
 
-### Overall description:
+### Overall Description:
 The website allows registered users to create a recipe for a dish. The user can be able to specify ingredients required for a dish, and also upload photos/images about the dish. The user can be able to categorise the recipe (e.g., Italian, French, Chinese, Indian, Irish, etc.) and then search for recipes matching a particular category. The user can be able to create their categories themselves, i.e., one user may create categories about Chinese dishes, and another user may create categories about Italian dishes, etc. A user can be able to categorise their recipes only by the categories they have created. An unregistered user can be able to only view recipes, by selecting all the categories available in the system. 
 
 ### Milestone 1:
