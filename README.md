@@ -1,9 +1,9 @@
 # Team 14 - Recipe Website Project
 
 ### Milestone 1
-* `Login/Register`: Allow users to register accounts and login through their accounts and passwords.
-2. Users with registered accounts can write their own proprietary recipes and display their past recipes and release time
-3. Users who register accounts can change their resumes
+* `Login/Register function`: Allow users to register accounts and login through their accounts and passwords.
+* `Post/Show Recipes function`: Users with registered accounts can write their own proprietary recipes and display their past recipes and release time.
+* `Upload/Update Resumes function`. Users who register accounts can upload or change their resumes.
 4. Registered users and unregistered users can see the recipes published by other users, the user name of the user publishing the recipes, and the time of publishing the recipes
 5. Users can search recipes published by others according to keywords
 6. Users can click the menu link and view the details of the menu
