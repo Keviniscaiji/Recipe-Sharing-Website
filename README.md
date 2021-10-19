@@ -14,7 +14,8 @@ The website allows registered users to create a recipe for a dish. The user can 
 * `CSS`: Set the CSS design for these existing interface.
 
 ### Milestone 2:
-* `Post Pictures For Recipe Function`: Allow users to upload pictures for each step, set the materials of dishes and more humanized settings.
+* `Post Pictures for Recipe Function`: Allow users to upload pictures for each step, set the materials of dishes and more humanized settings.
+* `Create Categories for Recipe`: The user can be able to create their categories themselves and an unregistered user can be able to only view recipes, by selecting all the categories available in the system. 
 * `Optimize the interface and click the picture to display the content`: On the index interface, we only display the pictures of the dishes. Only after clicking the pictures will we see the details of the dishes.
 * `Filter Dishes Function`: Allow users to filter dishes according to different conditions, and allow users to filter dishes according to special criteria, such as release time and popularity.
 * `Like function`: Allow users to like their favorite dishes and record the comount of likes.
