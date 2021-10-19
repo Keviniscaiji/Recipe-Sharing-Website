@@ -1,6 +1,6 @@
-# TEAM_14
+# Team 14
 
-Milestone 1
+### Milestone 1
 1. Allow users to register accounts
 2. Users with registered accounts can write their own proprietary recipes and display their past recipes and release time
 3. Users who register accounts can change their resumes
@@ -10,7 +10,7 @@ Milestone 1
 7. Set the CSS design for the interface
 8. Finish "Remember Me" function
 
-Milestone 2
+### Milestone 2
 1. Allow users to upload pictures for each step, set the materials of dishes and more humanized settings.
 2. On the index interface, we only display the pictures of the dishes. Only after clicking the pictures will we see the details of the dishes.
 3. Allow users to filter dishes according to different conditions, and allow users to filter dishes according to special criteria, such as release time and popularity.
