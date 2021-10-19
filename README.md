@@ -1,14 +1,14 @@
 # Team 14 - Recipe Website Project
 
 ### Milestone 1
-* `Login/Register function`: Allow users to register accounts and login through their accounts and passwords.
-* `Post/Show Recipes function`: Users with registered accounts can write their own proprietary recipes and display their past recipes and release time.
-* `Upload/Update Resumes function`. Users who register accounts can upload or change their resumes.
-4. Registered users and unregistered users can see the recipes published by other users, the user name of the user publishing the recipes, and the time of publishing the recipes
-5. Users can search recipes published by others according to keywords
-6. Users can click the menu link and view the details of the menu
-7. Set the CSS design for the interface
-8. Finish "Remember Me" function
+* `Login/Register Function`: Allow users to register accounts and login through their accounts and passwords.
+* `Upload/Update Resumes Function`: Users who register accounts can upload or change their resumes.
+* `Post Recipes Function`: Users with registered accounts can write their own proprietary recipes and display their past recipes and release time.
+* `View Recipes Function`: Registered users and unregistered users can see the recipes published by other users, the user name of the user publishing the recipes, and the time of publishing the recipes.
+* `Search Function`: Users can search recipes published by others according to keywords.
+* `Relevant Function about Menu`: Users can click the menu link and view the details of the menu.
+* `CSS`: Set the CSS design for these existing interface.
+* `Remember Me Function`: After check the checkbox, the system will remember the last login user name and password to save the user's time.
 
 ### Milestone 2
 1. Allow users to upload pictures for each step, set the materials of dishes and more humanized settings.
