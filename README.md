@@ -1,5 +1,8 @@
 # Team 14 - Recipe Website Project
 
+### Overall description:
+The website should allow registered users to create a recipe for a dish. The user should be able to specify ingredients required for a dish, and also upload photos/images about the dish. The user should be able to categorise the recipe (e.g., Italian, French, Chinese, Indian, Irish, etc.) and then search for recipes matching a particular category. The user should be able to create their categories themselves, i.e., one user may create categories about Chinese dishes, and another user may create categories about Italian dishes, etc. A user should be able to categorise their recipes only by the categories they have created. An unregistered user should be able to only view recipes, by selecting all the categories available in the system. 
+
 ### Milestone 1:
 * `Login/Register Function`: Allow users to register accounts and login through their accounts and passwords.
 * `Upload/Update Resumes Function`: Users who register accounts can upload or change their resumes.
@@ -9,7 +12,6 @@
 * `View Recipes Function`: Registered users and unregistered users can see the recipes published by other users, the user name of the user publishing the recipes, and the time of publishing the recipes.
 * `Search Function`: Users can search recipes published by others according to keywords.
 * `CSS`: Set the CSS design for these existing interface.
-
 
 ### Milestone 2:
 * `Post Pictures For Recipe Function`: Allow users to upload pictures for each step, set the materials of dishes and more humanized settings.
