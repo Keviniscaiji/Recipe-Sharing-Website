@@ -4,7 +4,8 @@
 The website allows registered users to create a recipe for a dish. The user can be able to specify ingredients required for a dish, and also upload photos/images about the dish. The user can be able to categorise the recipe (e.g., Italian, French, Chinese, Indian, Irish, etc.) and then search for recipes matching a particular category. The user can be able to create their categories themselves, i.e., one user may create categories about Chinese dishes, and another user may create categories about Italian dishes, etc. A user can be able to categorise their recipes only by the categories they have created. An unregistered user can be able to only view recipes, by selecting all the categories available in the system. 
 
 ### Milestone 1:
-* `Login/Register Function`: Allow users to register accounts and login through their accounts and passwords.
+*  `Upload/Update Avatar Function`:Allow users to upload their own avatar and display it in the index. Click the avatar to jump to the profile interface. If users do not set their own avatar, the system will set a default avatar for users.
+* `Login/Register Functio`n: Allow users to register accounts and login through their accounts and passwords.
 * `Upload/Update Resumes Function`: Users who register accounts can upload or change their resumes.
 * `Remember Me Function`: After check the checkbox, the system will remember the last login user name and password to save the user's time.
 * `Relevant Function about Menu`: Users can click the menu link and view the details of the menu.
