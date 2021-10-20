@@ -7,7 +7,6 @@ The website allows registered users to create a recipe for a dish. The user can 
 *  `Upload/Update Avatar Function`:Allow users to upload their own avatar and display it in the index. Click the avatar to jump to the profile interface. If users do not set their own avatar, the system will set a default avatar for users.
 * `Login/Register Functio`n: Allow users to register accounts and login through their accounts and passwords.
 * `Upload/Update Resumes Function`: Users who register accounts can upload or change their resumes.
-* `Remember Me Function`: After check the checkbox, the system will remember the last login user name and password to save the user's time.
 * `Relevant Function about Menu`: Users can click the menu link and view the details of the menu.
 * `Post Recipes Function`: Users with registered accounts can write their own proprietary recipes and display their past recipes and release time.
 * `View Recipes Function`: Registered users and unregistered users can see the recipes published by other users, the user name of the user publishing the recipes, and the time of publishing the recipes.
