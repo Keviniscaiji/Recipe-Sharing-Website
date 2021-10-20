@@ -1,0 +1,36 @@
+{% include 'head.html' %}
+<body class = "bigform1">
+{% include 'navigation_bar.html' %}
+<!-- part of the login in page use the idea form material in week5 page 12 -->
+<div class="form1">
+<h1> Sign in </h1>
+<br>
+
+<form action="" method="post" novalidate>
+    {{form.hidden_tag()}}
+<!--This table is used to collect user information-->
+
+    <p>
+        {{form.username.label}}: &nbsp;
+        {{form.username(class= "flask_form")}}
+        {% for error in form.username.error %}
+<!-- use the error handle in material in week5 page 22 -->
+        <span style="color: red">[{{error}}]</span>
+        {% endfor %}
+    </p>
+    <br>
+    <p>
+        {{form.password.label}}: &nbsp;
+        {{form.password(class= "flask_form")}}
+        {% for error in form.password.error %}
+        <span style="color: red">[{{error}}]</span>
+        {% endfor %}
+    </p>
+    <br>
+    <p>
+        {{form.remember_me()}} {{form.remember_me.label}}
+    </p>
+    <p>{{form.submit(class = "button")}}</p>
+</form>
+</div>
+</body> 

@@ -1,0 +1,54 @@
+{% include 'head.html' %}
+<body class = "bigform3">
+{% include 'navigation_bar.html' %}
+<div class="form2">
+    <h2>Hello {{user.username}}</h2>
+    <p>Let's complete your profile:</p>
+    <form action="" method="post" enctype="multipart/form-data" novalidate>
+        {{ form.hidden_tag() }}
+<!--Users can upload their own information here-->
+        <!-- use the error handle in material in week5 page 22 -->
+        <p>
+            {{ form.dob.label }}<br>
+            {{ form.dob(size=32) }}
+        </p>
+        <!-- use idea of form from week5 page 12 -->
+        {% for error in form.dob.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+        <p>
+            {% for choice in form.gender %}
+                <tr>
+                    <td>{{ choice }}</td>
+                    <td>{{ choice.label }}</td>
+                </tr>
+            {% endfor %}
+
+            {% for error in form.gender.errors %}
+            <span style="color: rgb(27, 25, 25);">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+<!--        On the original basis, I added two functions: setting my own country and setting my own avatar-->
+        <p>
+            {{ form.country.label }}<br><br>
+            {{ form.country }}
+
+            {% for error in form.country.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+
+        <p>
+            {{ form.avatar.label }}<br><br>
+            {{ form.avatar(size=12) }}
+
+            {% for error in form.avatar.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+
+        <p>{{ form.submit() }}</p>
+
+    </form>
+</div>
+</body>

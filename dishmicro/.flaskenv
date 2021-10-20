@@ -1,0 +1,2 @@
+FLASK_APP=dishmicro.py
+FLASK_DEBUG=1

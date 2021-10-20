@@ -1,0 +1,41 @@
+{% include 'head.html' %}
+<body class = "bigform3">
+{% include 'navigation_bar.html' %}
+<!--Reference the header and navigation bar so that each HTML file can set its own independent body-->
+    <div class="form2">
+<!--        Users can see their previous posts-->
+    {% if prev_posts %}
+        <ul>
+            {% for post in prev_posts %}
+                <li>post dish {{ post.title }} at {{ post.timestamp }} </li>
+            {% endfor %}
+        </ul>
+        <hr>
+    {% else %}
+        <p>No previous posts!</p>
+        <hr>
+    {% endif %}
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+
+        <p>
+            {{ form.posttitle.label }}<br>
+            {{ form.posttitle(class="flask_form") }}
+            <!-- use the error handle in material in week5 page 22 -->
+            {% for error in form.posttitle.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+<!--It increases the content that users can input, which is more suitable for writing recipes-->
+        <p>
+            {{ form.postbody.label }}<br>
+            {{ form.postbody(class="post_form") }}
+
+            {% for error in form.postbody.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+</div>
+</body>

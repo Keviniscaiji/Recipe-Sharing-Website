@@ -1,0 +1,38 @@
+<div class="nav">
+    DishApp:
+<!--    Similar to the previous code, the links that users who log in can
+access are different from those who do not log in-->
+        <a href="{{url_for('index')}}" class="link">Main page</a>
+
+        {% if not session.get("USERNAME") %}
+        <a href="{{url_for('login')}}" class="link">Login</a>
+        <a href="{{url_for('signup')}}"  class="link">Sign up</a>
+        {% endif %}
+
+        {% if session.get("USERNAME") %}
+        <a href="{{url_for('post')}}" class="link">Write a Post</a>
+        <a href="{{ url_for('logout') }}" class="link">Logout</a>
+        {% endif %}
+<!--There is no search button in index.html-->
+<!--    Use session avadar to obtain the location of the user's uploaded avatar
+Users who have not set a avatar will have a default avatar-->
+        <a href = {{url_for('static',filename='plain.html')}} class="link">Static Page</a>
+        {% if session.get("USERNAME") %}
+        {% if session.get("AVATAR") %}
+        <a class="pic_link" href="{{ url_for('profile') }}"class="link"><img title ="click to edit your profile"class = "pic" src={{url_for('static',filename=session.get("AVATAR")+'') }}></a>
+        {% else %}
+        <a class="pic_link" href="{{ url_for('profile') }}"class="link"><img title ="click to edit your profile" class = "pic" src={{url_for('static',filename='uploaded_Avatar/default.png') }}></a>
+        {% endif %}
+        {% endif %}
+</div>
+<hr>
+
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+<ul>
+    {% for message in messages %}
+    <li>{{message}}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+{% endwith %}
