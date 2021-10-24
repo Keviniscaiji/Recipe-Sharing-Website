@@ -33,8 +33,18 @@
              {% for error in form.criteria.error %}
              <span style="color: red">[{{error}}]</span>
              {% endfor %}
-             {{form.submit()}}
-        </form>
+             {{form.search()}}
+        &nbsp;
+<!--This search bar is used to arrange recipes in a certain order-->
+
+            {{form.order.label}}
+            {{form.order()}}
+
+            {% for error in form.order.error %}
+            <span style="color: red">[{{error}}]</span>
+            {% endfor %}
+            {{form.filter()}}
+       </form>
 <!--        from to show user's avatar, if the user has set his own avatar, it will user the path of the avatar to show the picture
 else it will use a default picture for avatar-->
         {% if session.get("USERNAME") %}

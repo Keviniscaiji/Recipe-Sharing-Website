@@ -14,16 +14,33 @@ from dishapp.models import User, Profile, Post
 def index():
     form = SearchForm()
     # if user use the search function, the system will check whether the search form have been filled
+    # prev_posts = Post.query.all()
     if form.validate_on_submit():
-        session["TITLE"] = form.criteria.data
+
+        if form.search.data:
+            session.pop("ORDER", None)
+            session["TITLE"] = form.criteria.data
+        elif form.filter.data:
+            session.pop("TITLE", None)
+            session['ORDER'] = form.order.data
         return redirect(url_for('index'))
     # use filter the sift the dishes that meet user's requirement
-    if session.get("TITLE") is None:
-        prev_posts = Post.query.all()
-    else:
+    # This search bar is used to arrange recipes in a certain order
+    if not session.get("ORDER") is None:
+        o = session.get("ORDER")
+        flash("the dish now is ordered by "+o)
+        if(o == 'Release time'):
+            prev_posts = Post.query.order_by(Post.timestamp).all()
+        elif(o == 'First letter A-Z'):
+            prev_posts = Post.query.order_by(Post.title).all()
+        else:
+            prev_posts = Post.query.order_by(Post.title.desc()).all()
+    elif not session.get("TITLE") is None:
         # Fuzzy Search Words
         t = session.get("TITLE")
         prev_posts = db.session.query(Post).filter(Post.title.like('%{0}%'.format(t))).all()
+    else:
+        prev_posts = Post.query.all()
     if not session.get("USERNAME") is None:
         user_in_db = User.query.filter(User.username == session.get("USERNAME")).first()
         stored_profile = Profile.query.filter(Profile.user == user_in_db).first()

@@ -47,6 +47,15 @@ class PostForm(FlaskForm):
     submit = SubmitField('Add Post')
 # the form that used for sift dishes
 class SearchForm(FlaskForm):
-    criteria = StringField("Search for dishes: ", validators=[DataRequired()])
-    submit = SubmitField('Search')
+    criteria = StringField("Search for dishes: ")
+    search = SubmitField('Search')
+    order = SelectField(
+        label='Ordered by:',
+        choices=(
+            'Release time',
+        'First letter A-Z',
+        'First letter Z-A'
+        )
+    )
+    filter = SubmitField('Confirm')
 
