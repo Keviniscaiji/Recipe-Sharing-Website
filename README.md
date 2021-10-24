@@ -15,7 +15,7 @@ The website allows registered users to create a recipe for a dish. The user can 
 * `View Recipes Function`: Registered users and unregistered users can see the recipes published by other users, the user name of the user publishing the recipes, and the time of publishing the recipes.
 * `Search Function`: Users can search recipes published by others according to keywords.
 * `CSS`: Set the CSS design for these existing interface.
-* `Order function`Allows the user to select a certain sorting method to arrange the recipes on the main interface in a certain order
+* `Order function`Allows the user to select a certain sorting method to arrange the recipes on the main interface in a certain order.
 
 ### Milestone 2:
 * `Post Pictures for Recipe Function`: Allow users to upload pictures for each step, set the materials of dishes and more humanized settings.
