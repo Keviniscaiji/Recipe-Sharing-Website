@@ -15,13 +15,13 @@ The website allows registered users to create a recipe for a dish. The user can 
 * `View Recipes Function`: Registered users and unregistered users can see the recipes published by other users, the user name of the user publishing the recipes, and the time of publishing the recipes.
 * `Search Function`: Users can search recipes published by others according to keywords.
 * `CSS`: Set the CSS design for these existing interface.
-* `Order function`Allows the user to select a certain sorting method to arrange the recipes on the main interface in a certain order.
+* `Order Function`: Allows the user to select a certain sorting method to arrange the recipes on the main interface in a certain order.
 
 ### Milestone 2:
 * `Post Pictures for Recipe Function`: Allow users to upload pictures for each step, set the materials of dishes and more humanized settings.
 * `Create Categories for Recipe`: The user can be able to create their categories themselves and an unregistered user can be able to only view recipes, by selecting all the categories available in the system. 
 * `Optimize the interface and click the picture to display the content`: On the index interface, we only display the pictures of the dishes. Only after clicking the pictures will we see the details of the dishes.
 * `Filter Dishes Function`: Allow users to filter dishes according to different conditions, and allow users to filter dishes according to special criteria, such as release time and popularity.
-* `Like function`: Allow users to like their favorite dishes and record the comount of likes.
-* `Log Out function`: Users can log out of their account and manage the recipes published before editing.
+* `Like Function`: Allow users to like their favorite dishes and record the comount of likes.
+* `Log Out Function`: Users can log out of their account and manage the recipes published before editing.
 
