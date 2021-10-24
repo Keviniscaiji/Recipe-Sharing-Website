@@ -81,7 +81,16 @@ else it will use a default picture for avatar-->
     {% for post in prev_posts %}
     <!--show the post the have been posted by users-->
         <div class="div_dishes" >{{post.author}}  at {{post.timestamp}}  post the dish:
-            <a href="/index/<{{post.id}}>" class="dish_link">{{post.title}}</a>
+            <a href="/index/<{{post.id}}>" class="dish_link">{{post.title}}</a><img id = "like" title ="thumb up" class = "picthumb" value="like(0)"src={{url_for('static',filename='script/thumbup.jpg') }}>
+            
             <br>{{post.body}}
+            <br>
         </div>
     {% endfor %}
+
+<script type="text/javascript">
+    var number=0;
+    document.getElementById('like').onclick=function(){
+        this.value="赞("+(++number)+")";
+    }
+</script>

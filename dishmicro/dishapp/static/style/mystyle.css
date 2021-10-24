@@ -10,6 +10,21 @@ body{
     padding-left: 20px;
     margin-bottom:-20px;
 }
+.picthumb{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    text-align: right;
+    margin-left: 200px;
+}
+.picthumb:hover{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    text-align: right;
+    margin-left: 200px;
+}
+
 .nav{
     /*Set some parameters of the navigation bar*/
     border-top: 1px solid #ff8500;
@@ -65,8 +80,9 @@ h1{
 }
 /*Set the form style of login interface and registration interface*/
 .form1{
-    padding-top: 20px;
+    
     margin: auto;
+    margin-top: 100px;
     padding: 40px;
     border-radius: 20px;
     width: 500px;
@@ -75,14 +91,14 @@ h1{
     -moz-opacity:0.85;
     opacity: 0.85;
     position: relative;
-    top: 10%;
+    top: 20%;
     overflow:hidden;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
 }
 /*Set the table style of post and profile*/
 .form2{
-    margin-top: 20px;
+    
     padding-top: 20px;
     margin: auto;
     padding: 40px;
@@ -111,6 +127,7 @@ h1{
 /*Convert all styles to form*/
 form{
     display: inline-block;
+    
 }
 /*Style the menu view details link in the index*/
 .dish_link{

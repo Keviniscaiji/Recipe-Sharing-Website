@@ -29,8 +29,11 @@ def index():
     if not session.get("ORDER") is None:
         o = session.get("ORDER")
         flash("the dish now is ordered by "+o)
-        if(o == 'Release time'):
+        
+        if(o == 'From old to new'):
             prev_posts = Post.query.order_by(Post.timestamp).all()
+        elif(o == 'From new to old'):
+            prev_posts = Post.query.order_by(Post.timestamp.desc()).all()
         elif(o == 'First letter A-Z'):
             prev_posts = Post.query.order_by(Post.title).all()
         else:

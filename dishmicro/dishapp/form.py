@@ -52,7 +52,8 @@ class SearchForm(FlaskForm):
     order = SelectField(
         label='Ordered by:',
         choices=(
-            'Release time',
+            'From old to new',
+            'From new to old',
         'First letter A-Z',
         'First letter Z-A'
         )
