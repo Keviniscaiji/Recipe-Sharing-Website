@@ -4,5 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <title>DishMicroBlog</title>
-  <link rel='stylesheet' href="{{url_for('static',filename='style/mystyle.css')}}">
+<!--  store the information in session so when user change the page, the style will not change -->
+  {% if not session.get("STYLE")%}
+  <link rel='stylesheet' class="styleType" href="{{url_for('static',filename='style/mystyle_white.css')}}">
+  {%else%}
+    <link rel='stylesheet' class="styleType" href="{{url_for('static',filename=session.get('STYLE'))}}">
+  {%endif%}
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src ="{{url_for('static',filename='javascript/dish.js')}}">
+
+  </script>
 </head>

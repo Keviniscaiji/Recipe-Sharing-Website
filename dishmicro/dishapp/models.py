@@ -28,7 +28,7 @@ class Profile(db.Model):
     dob = db.Column(db.DateTime, index=True)
     gender = db.Column(db.String(10), index=True)
     country = db.Column(db.String(20), index=True)
-    avatar = db.Column(db.String(256), index = True)
+    avatar = db.Column(db.String(256), index=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
 
     def __repr__(self):
@@ -39,9 +39,10 @@ class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(50))
     body = db.Column(db.String(10000))
-    timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
+    timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow())
+    dish_pic = db.Column(db.String(256), index=True, default="dish_default.jpeg")
+    likes = db.Column(db.Integer,default=0)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
-
     def __repr__(self):
         return '<Post made on {}: {}>'.format(self.timestamp, self.body)
 

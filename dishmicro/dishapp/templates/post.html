@@ -3,12 +3,13 @@
 {% include 'navigation_bar.html' %}
 <!--Reference the header and navigation bar so that each HTML file can set its own independent body-->
     <div class="form2">
+        <form action="" method="post" enctype="multipart/form-data" novalidate>
 <!--        Users can see their previous posts-->
     {% if prev_posts %}
         <ul>
-            {% for post in prev_posts %}
-                <li>post dish {{ post.title }} at {{ post.timestamp }} </li>
-            {% endfor %}
+<!--            {% for post in prev_posts %}-->
+<!--                <li>post dish {{ post.title }} at {{ post.timestamp }} </li>-->
+<!--            {% endfor %}-->
         </ul>
         <hr>
     {% else %}
@@ -20,7 +21,7 @@
 
         <p>
             {{ form.posttitle.label }}<br>
-            {{ form.posttitle(class="flask_form") }}
+            {{ form.posttitle(class="flask_form post_title", id = "post_title") }}
             <!-- use the error handle in material in week5 page 22 -->
             {% for error in form.posttitle.errors %}
             <span style="color: red;">[{{ error }}]</span>
@@ -29,13 +30,24 @@
 <!--It increases the content that users can input, which is more suitable for writing recipes-->
         <p>
             {{ form.postbody.label }}<br>
-            {{ form.postbody(class="post_form") }}
+            {{ form.postbody(class="post_form word_count", id = "post_body") }}
 
             {% for error in form.postbody.errors %}
             <span style="color: red;">[{{ error }}]</span>
             {% endfor %}
+
         </p>
-        <p>{{ form.submit() }}</p>
+
+        <p>
+            {{ form.dish_pic.label }}  &nbsp; &nbsp;<span id="show_word_count" style="color: red">Number of words: 0 </span> <br><br>
+            {{ form.dish_pic(size=12, id = "post_pic")}}
+
+            {% for error in form.dish_pic.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+
+        <p>{{ form.submit(id = "submit_post") }}</p>
     </form>
 </div>
 </body>

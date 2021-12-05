@@ -1,0 +1,65 @@
+<!--the html file for show database -->
+{% include 'head.html' %}
+<script type="text/javascript" src="{{url_for('static',filename='javascript/manage_database.js')}}">
+</script>
+<body class="bigform4">
+{% include 'navigation_bar.html' %}
+<h1 class="h1_dishes_detail">
+    You are in manager mode , click the button beside the item to remove the item from database<br>
+</h1><br>
+<table class="table_database" align=center>
+    {% for post in posts %}
+    <tr>
+        <td>{{post.author}}</td>
+        <td>{{post.title}}</td>
+        <td>
+            <button onclick="remove_dish('{{post.id}}')">remove dish</button>
+        </td>
+    </tr>
+    {% endfor %}
+    {% if posts %}
+    <tr>
+        <td colspan="3">
+        <button onclick="remove_all_dishes()">remove all dishes</button>
+        </td>
+    </tr>
+    {%else%}
+        <tr>
+        <td colspan="3">
+        <span>There is no dish in the database</span>
+        </td>
+    </tr>
+    {% endif %}
+</table>
+
+<br>
+<br>
+<br>
+
+<table class="table_database" align=center>
+    {% for user in users %}
+    <tr>
+        <td>Id :{{user.id}} </td>
+        <td>{{user.username}} </td>
+        <td>{{user.email}} </td>
+        <td>
+            <button onclick="remove_user('{{user.id}}')">remove user</button>
+        </td>
+    </tr>
+
+    {% endfor %}
+    {% if users %}
+    <tr>
+        <td colspan="4">
+        <button onclick="remove_all_users()">remove all users</button>
+        </td>
+    </tr>
+    {% else %}
+        <tr>
+        <td colspan="4">
+        <span>There is no user in the database</span>
+        </td>
+    </tr>
+    {% endif %}
+</table>
+

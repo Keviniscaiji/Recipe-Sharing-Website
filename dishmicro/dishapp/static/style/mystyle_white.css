@@ -1,0 +1,284 @@
+/*this css file is used for white style(the style can be switched in the index)*/
+body{
+    font-family: "Times New Roman";
+}
+.pic{
+    /*Set the parameters of the avatar. No matter how large the avatar is,
+     it will be converted to cube, so the aspect ratio of the avatar is very important*/
+    height: 60px;
+    width: 60px;
+    padding-left: 20px;
+    margin-bottom:-20px;
+}
+.dish_pic{
+    /*Set the parameters of the avatar. No matter how large the avatar is,
+     it will be converted to cube, so the aspect ratio of the avatar is very important*/
+    height: 200px;
+    width: 200px;
+    padding-left: 20px;
+}
+.loading_pic{
+    display: inline-block;
+    height: 30px;
+    width: auto;
+    /*padding: 10px;*/
+    padding-left: 10px;
+    margin-bottom: -10px;
+}
+.picthumb{
+
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    text-align: right;
+    margin-left: 200px;
+}
+.picthumb:hover{
+    border-color: yellow;
+    height: 32px;
+    width: 32px;
+    text-align: right;
+    margin-left: 200px;
+}
+
+.nav{
+    /*Set some parameters of the navigation bar*/
+    border-top: 1px solid #ff8500;
+    border-bottom: 3px solid #000;
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    background-color: #08f108;
+    color: black;
+    text-align: center;
+    /*height: 90px;*/
+}
+.nav .link{
+    /*Parameters linked in the navigation bar*/
+    display: inline-block;
+    color: #1E1E1E;
+    text-decoration: none; 
+    padding:20px;
+}
+
+/*Sets the effect of the mouse over the navigation bar*/
+.nav .link:hover{
+    /*background-color: #eee;*/
+    background-color: #FF6700;
+}
+/*Set the parameters of introduction in index.html*/
+.intro {
+    font-size: 20px;
+    color: black;
+}
+/*Set the parameters of head*/
+h1{
+    text-align: center;
+    font-size:30px;
+}
+/*Set the size of the post table in post.html*/
+.post_form{
+    height: 250px;
+    width: 600px;
+}
+/*Set the size of the form for filling in personal information*/
+.flask_form{
+    size: 2em;
+    height: 2em;
+    width: 200px;
+}
+/*Set the size of each button*/
+.button{
+    width: 80px;
+    height: 40px;
+    margin: auto;
+}
+/*Set the basic padding for the table*/
+.form{
+    margin-bottom: 30px;
+}
+/*Set the form style of login interface and registration interface*/
+.form1{
+    
+    margin: auto;
+    margin-top: 100px;
+    padding: 40px;
+    border-radius: 20px;
+    width: 500px;
+    background-color: #a3a3a3;
+    filter:alpha(Opacity=85);
+    -moz-opacity:0.85;
+    opacity: 0.85;
+    position: relative;
+    top: 20%;
+    overflow:hidden;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+/*Set the table style of post and profile*/
+.form2{
+
+    margin: auto;
+    padding: 40px;
+    border-radius: 20px;
+    width: 700px;
+    background-color: #b4b4b4;
+    filter:alpha(Opacity=75);
+    -moz-opacity:0.75;
+    opacity: 0.75;
+    position: relative;
+    top: 10%;
+    overflow:hidden;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+/*Set the style of the menu displayed in the index and try to keep the original style when posting*/
+.div_dishes{
+    padding: 10px;
+    display: inline-block;
+    border: black 1px dashed;
+    font-size: 20px;
+    width: 30%;
+    word-break: break-all;
+    word-wrap: break-word;
+    height: 300px;
+    white-space:pre-wrap;
+    color: #342B20;
+    background-color: rgba(255,255,255,0.7);
+}
+/*Convert all styles to form*/
+form{
+    display: inline-block;
+    
+}
+/*Style the menu view details link in the index*/
+.dish_link{
+    text-decoration: none;
+    font-size: 20px;
+    color: #ff8500;
+    font-weight: bold;
+}
+/*Style the menu view details link in the index when mouse hover on it*/
+.dish_link:hover{
+    font-size: 20px;
+    color: blue;
+    font-weight: bold;
+}
+/*Set the text style in dish detail*/
+
+.div_dishes_detail{
+    border: black 1px dashed;
+    font-size: 25px;
+    width: 95%;
+    /*word-break: break-all;*/
+    word-wrap: break-word;
+    height: auto;
+    white-space:pre-wrap;
+    background:rgba(255,255,255,0.8);
+}
+
+/*Set the background in dish detail*/
+.detail_background{
+    /* background-image: url("beef.png"); */
+    background-color: #a3a3a3;
+    background-size:auto;
+    background-size: 680px;
+    /*-moz-opacity:0.75;*/
+    /*opacity: 0.75;*/
+    /*position: relative;*/
+    top: 10%;
+}
+/*Set the background and basic style of login*/
+.bigform1{
+    background-image: url("login_white.jpeg");
+    /* height: 585px; */
+    width:100%;
+    height:100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+ 
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+}
+/*Set the background and basic style of signup*/
+.bigform2{
+    background-image: url("signup_white.png");
+    width:100%;
+    height:100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+}
+/*Set the background and basic styles of dishtdetail, post and profile*/
+.bigform3{
+    background-image: url("userpage_white.png");
+    width:100%;
+    height:100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+}
+/*form for database*/
+.bigform4{
+    background-image: url("database_black.jpeg");
+    width:100%;
+    height:100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+}
+/*Set the background and basic style of index*/
+.table{
+    background-image: url("index_white.jpeg");
+    background-size:auto;
+    background-size: 1500px;
+    /*-moz-opacity:0.75;*/
+    /*opacity: 0.75;*/
+    /*position: relative;*/
+    top: 10%;
+}
+.error_span{
+    color: red;
+}
+.author_link{
+    text-decoration: none;
+    color: #ff8500;
+}
+/*if the input do meet the requirement, the form will turn green*/
+.success{
+    color: black;
+}
+/*if the input do not meet the requirement, the form will turn red*/
+.failure{
+    color: red;
+    /*background-color: red;*/
+}
+.table_database{
+    width: 50%;
+    border:3px solid black;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+.table_database td{
+    padding: 10px;
+    border:3px solid black;
+    background-color: white;
+    color: black;
+}
+.pure_word_div{
+    width: 100%;
+    color: #342B20;
+    background-color: rgba(255,255,255,0.7);
+}

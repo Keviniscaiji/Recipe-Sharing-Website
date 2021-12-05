@@ -3,34 +3,35 @@
 {% include 'navigation_bar.html' %}
 <!-- part of the login in page use the idea form material in week5 page 12 -->
 <div class="form1">
+
 <h1> Sign in </h1>
 <br>
-
+<script src ="{{url_for('static',filename='javascript/test_login_ajax.js')}}"></script>
 <form action="" method="post" novalidate>
     {{form.hidden_tag()}}
 <!--This table is used to collect user information-->
 
     <p>
         {{form.username.label}}: &nbsp;
-        {{form.username(class= "flask_form")}}
+        {{form.username(class= "flask_form",id = "username_form_login")}}
         {% for error in form.username.error %}
 <!-- use the error handle in material in week5 page 22 -->
-        <span style="color: red">[{{error}}]</span>
+        <span class = "error_span">[{{error}}]</span>
         {% endfor %}
     </p>
     <br>
     <p>
         {{form.password.label}}: &nbsp;
-        {{form.password(class= "flask_form")}}
+        {{form.password(class= "flask_form",id = "password_form_login")}}
         {% for error in form.password.error %}
-        <span style="color: red">[{{error}}]</span>
+        <span class = "error_span">[{{error}}]</span>
         {% endfor %}
     </p>
     <br>
     <p>
-        {{form.remember_me()}} {{form.remember_me.label}}
+        {{form.remember_me(id = "readme_checked")}} {{form.remember_me.label}}
     </p>
-    <p>{{form.submit(class = "button")}}</p>
+    <p>{{form.submit(class = "button",onclick="check_username_and_password()")}}</p>
 </form>
 </div>
 </body> 

@@ -1,29 +1,57 @@
 <div class="nav">
     DishApp:
-<!--    Similar to the previous code, the links that users who log in can
-access are different from those who do not log in-->
-        <a href="{{url_for('index')}}" class="link">Main page</a>
+    <!--    Similar to the previous code, the links that users who log in can
+    access are different from those who do not log in-->
 
-        {% if not session.get("USERNAME") %}
-        <a href="{{url_for('login')}}" class="link">Login</a>
-        <a href="{{url_for('signup')}}"  class="link">Sign up</a>
-        {% endif %}
+    {% if not session.get("MANAGER")%}
+    <a href="{{url_for('index')}}" class="link">Main page</a>
+    {% endif %}
 
-        {% if session.get("USERNAME") %}
-        <a href="{{url_for('post')}}" class="link">Write a Post</a>
-        <a href="{{ url_for('logout') }}" class="link">Logout</a>
-        {% endif %}
-<!--There is no search button in index.html-->
-<!--    Use session avadar to obtain the location of the user's uploaded avatar
-Users who have not set a avatar will have a default avatar-->
-        <a href = {{url_for('static',filename='plain.html')}} class="link">Static Page</a>
-        {% if session.get("USERNAME") %}
-        {% if session.get("AVATAR") %}
-        <a class="pic_link" href="{{ url_for('profile') }}"class="link"><img title ="click to edit your profile"class = "pic" src={{url_for('static',filename=session.get("AVATAR")+'') }}></a>
-        {% else %}
-        <a class="pic_link" href="{{ url_for('profile') }}"class="link"><img title ="click to edit your profile" class = "pic" src={{url_for('static',filename='uploaded_Avatar/default.png') }}></a>
-        {% endif %}
-        {% endif %}
+    {% if not session.get("USERNAME") and not session.get("MANAGER")%}
+    <a href="{{url_for('login')}}" class="link">Login</a>
+    <a href="{{url_for('signup')}}" class="link">Sign up</a>
+    {% endif %}
+
+    {% if session.get("USERNAME") %}
+    <a href="{{url_for('post')}}" class="link">Write a Post</a>
+    <a href="{{url_for('logout')}}" class="link">Logout</a>
+    {% endif %}
+
+    <!--    if the user login as a manager, -->
+    {% if session.get("MANAGER") %}
+    <a href="{{url_for('logout_manager')}}" class="link">Quit manager mode</a>
+    <a href="{{url_for('database')}}" class="link">View database</a>
+    {% endif %}
+    <!--There is no search button in index.html-->
+    <!--    Use session avadar to obtain the location of the user's uploaded avatar
+    Users who have not set a avatar will have a default avatar-->
+    {% if not session.get("MANAGER")%}
+    <a href={{url_for('static',filename='plain.html')}} class="link">Static Page</a>
+    {%endif%}
+
+    {% if session.get("USERNAME") %}
+    {% if session.get("AVATAR") %}
+    <a class="pic_link" href="{{ url_for('profile') }}" class="link"><img title="click to edit your profile" class="pic"
+                                                                          src={{url_for('static',filename=session.get("AVATAR")+'')
+                                                                          }}></a>
+    {% else %}
+    <a class="pic_link" href="{{ url_for('profile') }}" class="link"><img title="click to edit your profile" class="pic"
+                                                                          src={{url_for('static',filename='uploaded_Avatar/default.png')
+                                                                          }}></a>
+    {% endif %}
+    {% endif %}
+    <!-- add a link to activate the function inside javascript which can change
+    the style of the webside -->
+    <select id="select_style" onchange="changeStyle()">
+        {%if session.get("STYLE") == 'style/mystyle_white.css' or not session.get("STYLE")%}
+        <option value="white" selected="selected">Light mode</option>
+        <option value="black">Dark mode</option>
+        {%else%}
+        <option value="white">Light mode</option>
+        <option value="black" selected="selected">Dark mode</option>
+        {%endif%}
+    </select>
+
 </div>
 
 
@@ -31,7 +59,7 @@ Users who have not set a avatar will have a default avatar-->
 {% if messages %}
 <ul>
     {% for message in messages %}
-    <li>{{message}}</li>
+    <li class="error_span">{{message}}</li>
     {% endfor %}
 </ul>
 {% endif %}
