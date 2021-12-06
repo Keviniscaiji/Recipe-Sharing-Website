@@ -24,6 +24,8 @@ def lenmax(max=-1):
             raise ValidationError(message)
 
     return _length
+
+
 # use the official code to customize length check
 def lenmin(min=-1):
     message = 'Must longer than %d characters.' % (min)
@@ -34,6 +36,7 @@ def lenmin(min=-1):
             raise ValidationError(message)
 
     return _length
+
 
 # check whether the user is in the database
 def checkuser():
@@ -46,10 +49,12 @@ def checkuser():
 
     return _checkuser
 
+
 # check whether the user is in the database
 def checkemail():
     message = 'The username have been used'
     message2 = "please check email format"
+
     def _checkemail(form, field):
         email = field.data
         if User.query.filter(User.email == email).first():
@@ -61,7 +66,7 @@ def checkemail():
 
 
 class LoginForm(FlaskForm):
-    username = StringField("Username", validators=[DataRequired(),lenmin(min=1)])
+    username = StringField("Username", validators=[DataRequired(), lenmin(min=1)])
     password = PasswordField("Password", validators=[DataRequired(), lenmin(min=6)])
     remember_me = BooleanField('Remember Me')
     submit = SubmitField("Sign in")
@@ -71,13 +76,11 @@ class LoginForm(FlaskForm):
 #  the form that used to for signup
 class SignupForm(FlaskForm):
     username = StringField("Username", validators=[DataRequired(), checkuser(), lenmin(min=1)])
-    email = EmailField("Email", validators=[DataRequired(),checkemail(), lenmin(min=1)])
+    email = EmailField("Email", validators=[DataRequired(), checkemail(), lenmin(min=1)])
     password = PasswordField("Password", validators=[DataRequired(), lenmin(min=6)])
     password2 = PasswordField("Repeat Password", validators=[DataRequired(), lenmin(min=6)])
     accept_rules = BooleanField('I accept the site rules', validators=[DataRequired()])
     submit = SubmitField("Sign in")
-
-
 
 
 # the form that used for storing user's user detail

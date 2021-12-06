@@ -106,7 +106,7 @@ else it will use a default picture for avatar-->
 <br>
     {% for post in prev_posts %}
     <!--show the post the have been posted by users-->
-        <div class="div_dishes"> <a href="" class = "author_link">{{post.author}}</a> post the dish:
+        <div class="div_dishes"> <a class = "author_link {{post.user_id}}">{{post.author}}</a> post the dish:
             <a href="/index/{{post.id}}" class="dish_link">{{post.title}}</a><img class="picthumb"
                                                                                   id="like" onclick="addLike('{{post.id}}')"
                                                                                   src={{url_for('static',filename='javascript/thumbup.jpg')}}

@@ -1,3 +1,4 @@
+import logging
 import os
 # from urllib import request
 import re
@@ -255,7 +256,20 @@ def post():
 # check user's signup information
 @app.route('/checkuser', methods=['POST'])
 def check_username():
-    # time.sleep(5)
+    # get user's basic info in the index
+    if request.form["type"] == "get_user_info":
+        user_id = request.form['id']
+        app.logger.info(user_id)
+        user_info = Profile.query.filter(Profile.user_id == user_id).first()
+        if not user_info:
+            return jsonify({'text': 'User do not in database',
+                            'returnvalue': 0})
+        else:
+            return jsonify({'text': "User's information",
+                            'dob': user_info.dob,
+                            'country': user_info.country,
+                            'gender': user_info.gender,
+                            'returnvalue': 1})
     # check whether the username has been used
     if request.form["type"] == "username":
         chosen_name = request.form['username']
@@ -281,22 +295,25 @@ def check_username():
         username = request.form['username']
         password = request.form['password']
         user_in_db = User.query.filter(User.username == username).first()
+
         # 00 means both are incorrect
         # 10 means the username exist but the password is incorrect
         # 11 means both are correct
+
         if not user_in_db:
             return jsonify({'text': 'Sorry, User not found:-(',
-                                'returnvalue': 00})
+                            'returnvalue': 00})
         else:
-              if check_password_hash(user_in_db.password_hash, password):
-                  return jsonify({'text': 'Login success!:-D',
-                                  "returnvalue": 11})
-              else:
-                  return jsonify({'text': 'Sorry! Please check your password:-(',
-                                    'returnvalue': 10})
+            if check_password_hash(user_in_db.password_hash, password):
+                return jsonify({'text': 'Login success!:-D',
+                                "returnvalue": 11})
+            else:
+                return jsonify({'text': 'Sorry! Please check your password:-(',
+                                'returnvalue': 10})
 
 
 #  enable users to like the dish
+
 @app.route('/addlike', methods=['POST'])
 def add_like():
     liked_dish = request.form['dish_id']
