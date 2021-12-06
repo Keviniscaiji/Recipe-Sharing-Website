@@ -18,10 +18,12 @@ The website allows registered users to create a recipe for a dish. The user can 
 * `Order Function`: Allows the user to select a certain sorting method to arrange the recipes on the main interface in a certain order.
 
 ### Milestone 2:
-* `Post Pictures for Recipe Function`: Allow users to upload pictures for each step, set the materials of dishes and more humanized settings.
-* `Create Categories for Recipe`: The user can be able to create their categories themselves and an unregistered user can be able to only view recipes, by selecting all the categories available in the system. 
-* `Optimize the interface and click the picture to display the content`: On the index interface, we only display the pictures of the dishes. Only after clicking the pictures will we see the details of the dishes.
-* `Filter Dishes Function`: Allow users to filter dishes according to different conditions, and allow users to filter dishes according to special criteria, such as release time and popularity.
-* `Like Function`: Allow users to like their favorite dishes and record the comount of likes.
-* `Log Out Function`: Users can log out of their account and manage the recipes published before editing.
+
+* `Enhanced user interaction `: The interaction between users and UI is enhanced. For example, in the post interface, the user input box will turn gray, and there is a red word count in the position of post body. When the user enters the password, mailbox and user name during registration, if the input does not meet the specification, the font will turn red and the reason for the non-compliance will be displayed on the right synchronously
+* `Log-file Function`: A folder called logfile is established to save log file. Three log files are used to save debug, info and error information respectively.
+* `UI Choice Function`: User can switch between light mode and dark mode through the buttons on the navigation bar. Through Ajax and session, users can also keep selected style when switching between different pages.
+* `Darabase manage system`:  manager can enter "manager" for user name and "manager" for password to enter the manager system, in the interface, user can choose which user or dish to remove, they can also remove all the user or dish from the database by clicking the button remove all dishes or remove all users.
+* `Add Picture for Dish Function`: Users can add a picture for each post, and the picture and the content of the post will be displayed in the index interface
+* `Like Function`: Allow users to like their favorite dishes and record the amount of likes. In the interface of the main menu, users can arrange the dishes from high to low according to the number of like
+* `Strict Inspection`: A large number of validators are added. In the login interface, registration interface and post interface, if the user inputs incorrectly, the system has an alert window to list all the places where the user's input does not meet the requirements. For example, user who login in fail will be informed whether they enter the wrong username or password.
 
