@@ -26,4 +26,5 @@ The website allows registered users to create a recipe for a dish. The user can 
 * `Add Picture for Dish Function`: Users can add a picture for each post, and the picture and the content of the post will be displayed in the index interface
 * `Like Function`: Allow users to like their favorite dishes and record the amount of likes. In the interface of the main menu, users can arrange the dishes from high to low according to the number of like
 * `Strict Inspection`: A large number of validators are added. In the login interface, registration interface and post interface, if the user inputs incorrectly, the system has an alert window to list all the places where the user's input does not meet the requirements. For example, user who login in fail will be informed whether they enter the wrong username or password.
+* `Get User Information Function`: It is allowed to click the user name in the index to obtain the basic information of the user
 
