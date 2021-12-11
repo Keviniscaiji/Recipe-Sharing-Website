@@ -1,3 +1,4 @@
+//Remove a single dish from the database
 function remove_dish(id) {
     let a = confirm("Are you sure?")
     if (a) {
@@ -13,7 +14,7 @@ function remove_dish(id) {
         })
     }
 }
-
+//Remove all dishes from databases
 function remove_all_dishes() {
     let a = confirm("Are you sure?")
     if (a) {
@@ -28,7 +29,7 @@ function remove_all_dishes() {
         })
     }
 }
-
+//Remove a single user from the database
 function remove_user(id) {
     let a = confirm("Are you sure?")
     if (a) {
@@ -44,7 +45,7 @@ function remove_user(id) {
         })
     }
 }
-
+//Remove all users from databases
 function remove_all_users() {
     let a = confirm("Are you sure?")
     if (a) {

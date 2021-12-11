@@ -49,7 +49,8 @@ $(function () {
 
 
 
-    //The error message is displayed so that the user can know which parts need to be modified
+    //The error message is displayed so that the user can know which parts need to be modified, all the
+    //things that user need to change will be displayed
     $("#sign_up_button").on("click", function () {
         let msg = ""
         if ($("#signup_password1").val().length < 6) {
@@ -79,10 +80,9 @@ $(function () {
         }
     })
 })
-
+ //check whether the username is already used
  function check_username() {
         let chosen_user = $("#signup_username")
-        // $("#check_username").html("<img src='../style/loading.gif' class='loading_pic'> ")
         $.post('/checkuser', {
             'username': chosen_user.val(),
             'type': "username"
@@ -107,7 +107,7 @@ $(function () {
             msg2 = "The user name has already be used \n"
         });
     }
-
+    //check whether the email meet the format requirement and whether the email is already used
     function check_email() {
         let chosen_email = $("#signup_email")
         // $("#check_signup_email").html("<img src='../style/loading.gif' class='loading_pic'> ")

@@ -243,9 +243,7 @@ form{
     background-image: url("index_white.jpeg");
     background-size:auto;
     background-size: 1500px;
-    /*-moz-opacity:0.75;*/
-    /*opacity: 0.75;*/
-    /*position: relative;*/
+
     top: 10%;
 }
 .error_span{
@@ -270,13 +268,13 @@ form{
     background-color: white;
     color: black;
     text-align: center;
-}
+}/*set the style for database page's table*/
 .table_database td{
     padding: 10px;
     border:3px solid black;
     background-color: white;
     color: black;
-}
+}/*set the style for word so that user can see them clearly*/
 .pure_word_div{
     width: 100%;
     color: #342B20;

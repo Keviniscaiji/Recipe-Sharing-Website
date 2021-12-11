@@ -336,7 +336,7 @@ def database():
     else:
         return redirect(url_for('index'))
 
-
+# It is used to exit the account and pop all possible sessions of the user
 @app.route('/logout_manager')
 def logout_manager():
     session.pop("USERNAME", None)
@@ -345,7 +345,8 @@ def logout_manager():
     return redirect(url_for('login'))
 
 
-# manage the items to be remove
+# manage the items to be remove Single user, all users,
+# single dish, all dish, which depends on the information of the request you send
 @app.route('/manage_database', methods=['POST'])
 def manage_database():
     delete_type = request.form['type']
@@ -382,7 +383,8 @@ def manage_database():
     else:
         return jsonify({"text": "remove item fail"})
 
-
+# Change the style of the website and save it into a session. In the future, each time you log in to the website,
+# the website will detect your session and determine the style of your website according to the session
 @app.route('/change_style', methods=['POST'])
 def change_style():
     style_location = request.form['style_location']

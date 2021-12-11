@@ -102,12 +102,14 @@ else it will use a default picture for avatar-->
 <p class="intro"> 
     If you want to be a part of us, pleace click login if you have account, sign in if you have not register yet
 </p>
+
         </div>
 <br>
     {% for post in prev_posts %}
     <!--show the post the have been posted by users-->
         <div class="div_dishes"> <a class = "author_link {{post.user_id}}">{{post.author}}</a> post the dish:
-            <a href="/index/{{post.id}}" class="dish_link">{{post.title}}</a><img class="picthumb"
+            <a href="/index/{{post.id}}" class="dish_link">{{post.title}}</a>
+            <img class="picthumb"
                                                                                   id="like" onclick="addLike('{{post.id}}')"
                                                                                   src={{url_for('static',filename='javascript/thumbup.jpg')}}
                                                                                   title="thumb up" ><span class="like_number">{{post.likes}}</span>

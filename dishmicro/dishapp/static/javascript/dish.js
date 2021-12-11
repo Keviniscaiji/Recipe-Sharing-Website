@@ -58,7 +58,7 @@ function word_count() {
         document.querySelector(".word_count").style.backgroundColor = "grey"
     }
 }
-
+//Change the style of the input box when the user enters text
 function change_title_style() {
     let char_len = $(".post_title").val().match(/[a-zA-Z]+/mg).length
     if (char_len > 0 && $(".post_title").val().length > 0) {
@@ -80,8 +80,7 @@ function changeStyle() {
         }).fail(function () {
             alert("change style fail")
         })
-        // $(".styleType").attr("href","../style/mystyle_white.css")
-        // alert("change style to white")
+
     } else if (sty == "black") {
         $.post("/change_style", {
             style_location: 'style/mystyle_black.css'

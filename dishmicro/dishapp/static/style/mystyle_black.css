@@ -265,7 +265,7 @@ form{
     color: red;
     /*background-color: red;*/
 }
-
+/*set the style for database page's table*/
 .table_database{
     width: 50%;
     border:3px solid white;
@@ -273,12 +273,14 @@ form{
     color: white;
     text-align: center;
 }
+/*set the style for database page's table*/
 .table_database td{
     padding: 10px;
     border:3px solid white;
     background-color: black;
     color: white;
 }
+/*set the style for word so that user can see them clearly*/
 .pure_word_div{
     width: 100%;
     background:rgba(0,0,0,0.7);

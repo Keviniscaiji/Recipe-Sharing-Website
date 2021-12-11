@@ -1,3 +1,5 @@
+//Check the login text entered by the user in real time. If it does not meet the specification,
+// the places that do not meet the specification will be displayed at the same time
 function check_username_and_password() {
         if( $("#username_form_login").val()==""){
             alert("Please enter your username")

@@ -8,7 +8,7 @@ import logging
 app = Flask(__name__, static_url_path='')
 app.config.from_object(Config)
 db = SQLAlchemy(app)
-app.logger.info("my first logging")
+
 
 from dishapp import routes, models
 
@@ -46,5 +46,5 @@ handler3.setFormatter(formatter)
 handler3.setLevel(logging.INFO)
 app.logger.addHandler(handler3)
 
-# app.logger.info('so diffcult')
-# app.logger.error('I make an error')
+app.logger.info("Example info")
+app.logger.error("Example error")
