@@ -19,11 +19,11 @@ The website allows registered users to create a recipe for a dish. The user can 
 
 ### Milestone 2:
 
-* `Enhanced user interaction `: The interaction between users and UI is enhanced. For example, in the post interface, the user input box will turn gray, and there is a red word count in the position of post body. When the user enters the password, mailbox and user name during registration, if the input does not meet the specification, the font will turn red and the reason for the non-compliance will be displayed on the right synchronously
+* `Enhanced user interaction `: The interaction between users and UI is enhanced. For example, in the post interface, the user input box will turn gray, and there is a red word count in the position of post body. When the user enters the password, mailbox and user name during registration, if the input does not meet the specification, the font will turn red and the reason for the non-compliance will be displayed on the right synchronously.
 * `Log-file Function`: A folder called logfile is established to save log file. Three log files are used to save debug, info and error information respectively.
 * `UI Choice Function`: User can switch between light mode and dark mode through the buttons on the navigation bar. Through Ajax and session, users can also keep selected style when switching between different pages.
 * `Database manage system`:  manager can enter "manager" for user name and "manager" for password in login interface  to enter the manager system, in the interface, user can choose which user or dish to remove, they can also remove all the users or dishes from the database by clicking the button remove all dishes or remove all users.
-* `Add Picture for Dish Function`: Users can add a picture for each post, and the picture and the content of the post will be displayed in the index interface
-* `Like Function`: Allow users to like their favorite dishes and record the amount of likes. In the interface of the main menu, users can arrange the dishes from high to low according to the number of like
+* `Add Picture for Dish Function`: Users can add a picture for each post, and the picture and the content of the post will be displayed in the index interface.
+* `Like Function`: Allow users to like their favorite dishes and record the amount of likes. In the interface of the main menu, users can arrange the dishes from high to low according to the number of like.
 * `Strict Inspection`: A large number of validators are added. In the login interface, registration interface and post interface, if the user inputs incorrectly, the system has an alert window to list all the places where the user's input does not meet the requirements. For example, user who login in fail will be informed whether they enter the wrong username or password.
 
