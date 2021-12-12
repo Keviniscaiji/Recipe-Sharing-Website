@@ -1,18 +1,36 @@
-2021-12-11 18:29:17,441 root ERROR Example error
-2021-12-11 18:30:31,591 werkzeug INFO 127.0.0.1 - - [11/Dec/2021 18:30:31] "GET / HTTP/1.1" 200 -
-2021-12-11 18:30:31,602 werkzeug INFO 127.0.0.1 - - [11/Dec/2021 18:30:31] "[36mGET /style/mystyle_white.css HTTP/1.1[0m" 304 -
-2021-12-11 18:30:31,604 werkzeug INFO 127.0.0.1 - - [11/Dec/2021 18:30:31] "[36mGET /javascript/dish.js HTTP/1.1[0m" 304 -
-2021-12-11 18:30:31,607 werkzeug INFO 127.0.0.1 - - [11/Dec/2021 18:30:31] "[36mGET /dishes_pic/7.jpg HTTP/1.1[0m" 304 -
-2021-12-11 18:30:31,607 werkzeug INFO 127.0.0.1 - - [11/Dec/2021 18:30:31] "[36mGET /dishes_pic/6.jpg HTTP/1.1[0m" 304 -
-2021-12-11 18:30:31,608 werkzeug INFO 127.0.0.1 - - [11/Dec/2021 18:30:31] "[36mGET /javascript/addLike.js HTTP/1.1[0m" 304 -
-2021-12-11 18:30:31,608 werkzeug INFO 127.0.0.1 - - [11/Dec/2021 18:30:31] "[36mGET /uploaded_Avatar/default.png HTTP/1.1[0m" 304 -
-2021-12-11 18:30:31,609 werkzeug INFO 127.0.0.1 - - [11/Dec/2021 18:30:31] "[36mGET /dishes_pic/5.jpg HTTP/1.1[0m" 304 -
-2021-12-11 18:30:31,611 werkzeug INFO 127.0.0.1 - - [11/Dec/2021 18:30:31] "[36mGET /dishes_pic/8.jpeg HTTP/1.1[0m" 304 -
-2021-12-11 18:30:31,614 werkzeug INFO 127.0.0.1 - - [11/Dec/2021 18:30:31] "[36mGET /dishes_pic/11.jpg HTTP/1.1[0m" 304 -
-2021-12-11 18:30:31,615 werkzeug INFO 127.0.0.1 - - [11/Dec/2021 18:30:31] "[36mGET /javascript/thumbup.jpg HTTP/1.1[0m" 304 -
-2021-12-11 18:30:31,617 werkzeug INFO 127.0.0.1 - - [11/Dec/2021 18:30:31] "[36mGET /dishes_pic/13.jpg HTTP/1.1[0m" 304 -
-2021-12-11 18:30:31,618 werkzeug INFO 127.0.0.1 - - [11/Dec/2021 18:30:31] "[36mGET /dishes_pic/12.jpg HTTP/1.1[0m" 304 -
-2021-12-11 18:30:31,619 werkzeug INFO 127.0.0.1 - - [11/Dec/2021 18:30:31] "[36mGET /dishes_pic/10.jpeg HTTP/1.1[0m" 304 -
-2021-12-11 18:30:31,620 werkzeug INFO 127.0.0.1 - - [11/Dec/2021 18:30:31] "[36mGET /dishes_pic/15.jpeg HTTP/1.1[0m" 304 -
-2021-12-11 18:30:31,622 werkzeug INFO 127.0.0.1 - - [11/Dec/2021 18:30:31] "[36mGET /dishes_pic/14.jpeg HTTP/1.1[0m" 304 -
-2021-12-11 18:30:31,622 werkzeug INFO 127.0.0.1 - - [11/Dec/2021 18:30:31] "[36mGET /style/index_white.jpeg HTTP/1.1[0m" 304 -
+2021-12-12 19:57:47,283 root ERROR Example error
+2021-12-12 19:57:50,854 werkzeug INFO 127.0.0.1 - - [12/Dec/2021 19:57:50] "GET / HTTP/1.1" 200 -
+2021-12-12 19:57:50,863 werkzeug INFO 127.0.0.1 - - [12/Dec/202021-12-12 19:58:41,643 werkzeug INFO  * Restarting with stat
+304 -
+2021-12-12 19:57:50,864 werkzeug INFO 127.0.0.1 - - [12/Dec/2021 19:57:50] "[36mGET /dishes_pic/5.jpg HTTP/1.1[0m" 304 -
+2021-12-12 19:57:50,865 werkzeug INFO 127.0.0.1 - - [12/Dec/2021 19:57:50] "[36mGET /javascript/addLike.js HTTP/1.1[0m" 304 -
+2021-12-12 19:57:50,865 werkzeug INFO 127.0.0.1 - - [12/Dec/2021 19:57:50] "[36mGET /javascript/dish.js HTTP/1.1[0m" 304 -
+2021-12-12 19:57:50,865 werkzeug INFO 127.0.0.1 - - [12/Dec/2021 19:57:50] "[36mGET /dishes_pic/7.jpg HTTP/1.1[0m" 304 -
+2021-12-12 19:57:50,866 werkzeug INFO 127.0.0.1 - - [12/Dec/2021 19:57:50] "[36mGET /javascript/thumbup.jpg HTTP/1.1[0m" 304 -
+2021-12-12 19:57:50,869 werkzeug INFO 127.0.0.1 - - [12/Dec/2021 19:57:50] "[36mGET /style/mystyle_black.css HTTP/1.1[0m" 304 -
+2021-12-12 19:57:50,869 werkzeug INFO 127.0.0.1 - - [12/Dec/2021 19:57:50] "[36mGET /javascript/addLike.js HTTP/1.1[0m" 304 -
+2021-12-12 19:57:50,871 werkzeug INFO 127.0.0.1 - - [12/Dec/2021 19:57:50] "[36mGET /javascript/dish.js HTTP/1.1[0m" 304 -
+2021-12-12 19:57:50,873 werkzeug INFO 127.0.0.1 - - [12/Dec/2021 19:57:50] "[36mGET /dishes_pic/6.jpg HTTP/1.1[0m" 304 -
+2021-12-12 19:57:50,875 werkzeug INFO 127.0.0.1 - - [12/Dec/2021 19:57:50] "[36mGET /dishes_pic/10.jpeg HTTP/1.1[0m" 304 -
+2021-12-12 19:57:50,876 werkzeug INFO 127.0.0.1 - - [12/Dec/2021 19:57:50] "[36mGET /dishes_pic/11.jpg HTTP/1.1[0m" 304 -
+2021-12-12 19:57:50,877 werkzeug INFO 127.0.0.1 - - [12/Dec/2021 19:57:50] "[36mGET /dishes_pic/8.jpeg HTTP/1.1[0m" 304 -
+2021-12-12 19:57:50,878 werkzeug INFO 127.0.0.1 - - [12/Dec/2021 19:57:50] "[36mGET /dishes_pic/12.jpg HTTP/1.1[0m" 304 -
+2021-12-12 19:57:50,880 werkzeug INFO 127.0.0.1 - - [12/Dec/2021 19:57:50] "[36mGET /dishes_pic/15.jpeg HTTP/1.1[0m" 304 -
+2021-12-12 19:57:50,881 werkzeug INFO 127.0.0.1 - - [12/Dec/2021 19:57:50] "[36mGET /dishes_pic/13.jpg HTTP/1.1[0m" 304 -
+2021-12-12 19:57:50,882 werkzeug INFO 127.0.0.1 - - [12/Dec/2021 19:57:50] "[36mGET /dishes_pic/14.jpeg HTTP/1.1[0m" 304 -
+2021-12-12 19:57:50,883 werkzeug INFO 127.0.0.1 - - [12/Dec/2021 19:57:50] "[36mGET /style/index_white.jpeg HTTP/1.1[0m" 304 -
+2021-12-12 19:57:50,886 werkzeug INFO 127.0.0.1 - - [12/Dec/2021 19:57:50] "[36mGET /javascript/thumbup.jpg HTTP/1.1[0m" 304 -
+2021-12-12 19:57:50,889 werkzeug INFO 127.0.0.1 - - [12/Dec/2021 19:57:50] "[36mGET /uploaded_Avatar/default.png HTTP/1.1[0m" 304 -
+2021-12-12 19:57:50,889 werkzeug INFO 127.0.0.1 - - [12/Dec/2021 19:57:50] "[36mGET /dishes_pic/6.jpg HTTP/1.1[0m" 304 -
+2021-12-12 19:57:50,890 werkzeug INFO 127.0.0.1 - - [12/Dec/2021 19:57:50] "[36mGET /dishes_pic/5.jpg HTTP/1.1[0m" 304 -
+2021-12-12 19:57:50,893 werkzeug INFO 127.0.0.1 - - [12/Dec/2021 19:57:50] "[36mGET /dishes_pic/7.jpg HTTP/1.1[0m" 304 -
+2021-12-12 19:57:50,894 werkzeug INFO 127.0.0.1 - - [12/Dec/2021 19:57:50] "[36mGET /dishes_pic/8.jpeg HTTP/1.1[0m" 304 -
+2021-12-12 19:57:50,895 werkzeug INFO 127.0.0.1 - - [12/Dec/2021 19:57:50] "[36mGET /dishes_pic/10.jpeg HTTP/1.1[0m" 304 -
+2021-12-12 19:57:50,896 werkzeug INFO 127.0.0.1 - - [12/Dec/2021 19:57:50] "[36mGET /dishes_pic/12.jpg HTTP/1.1[0m" 304 -
+2021-12-12 19:57:50,897 werkzeug INFO 127.0.0.1 - - [12/Dec/2021 19:57:50] "[36mGET /dishes_pic/11.jpg HTTP/1.1[0m" 304 -
+2021-12-12 19:57:50,904 werkzeug INFO 127.0.0.1 - - [12/Dec/2021 19:57:50] "[36mGET /dishes_pic/14.jpeg HTTP/1.1[0m" 304 -
+2021-12-12 19:57:50,905 werkzeug INFO 127.0.0.1 - - [12/Dec/2021 19:57:50] "[36mGET /dishes_pic/15.jpeg HTTP/1.1[0m" 304 -
+2021-12-12 19:57:50,905 werkzeug INFO 127.0.0.1 - - [12/Dec/2021 19:57:50] "[36mGET /dishes_pic/13.jpg HTTP/1.1[0m" 304 -
+2021-12-12 19:57:50,906 werkzeug INFO 127.0.0.1 - - [12/Dec/2021 19:57:50] "[36mGET /style/index_black.jpeg HTTP/1.1[0m" 304 -
+2021-12-12 19:58:41,556 werkzeug INFO  * Detected change in '/Users/gongkaiwen/dishmicro/dishapp/__init__.py', reloading
+2021-12-12 19:58:42,128 root ERROR Example error
